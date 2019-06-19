@@ -31,11 +31,14 @@ export function validateTimeAndCursor(
     newH = oldH;
     newCursorPosition -= 1;
   } else if (Number(newH[0]) === 2) {
-    if (Number(oldH[0]) === 2 && Number(newH[1]) > 3) {
+    if (Number(oldH[0]) === 2 && Number(newH[1]) > 4) {
       newH = `2${oldH[1]}`;
       newCursorPosition -= 2;
-    } else if (Number(newH[1]) > 3) {
+    } else if (Number(newH[1]) > 4) {
       newH = '23';
+    } else if (Number(newH[1]) === 4) {
+      newCursorPosition += 2;
+      newM = '00';
     }
   }
 

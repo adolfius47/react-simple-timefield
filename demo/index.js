@@ -8,7 +8,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import IconClock from 'material-ui/svg-icons/device/access-time';
 import TextField from 'material-ui/TextField';
 
-import TimeField from '../';
+import TimeField from '../src';
 //import TimeField from '../src';
 
 class App extends React.Component {
