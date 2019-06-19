@@ -37,7 +37,6 @@ export function validateTimeAndCursor(
     } else if (Number(newH[1]) > 4) {
       newH = '23';
     } else if (Number(newH[1]) === 4) {
-      newCursorPosition += 2;
       newM = '00';
     }
   }
